@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Poppins;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+svg {
+    width: 30px;
+}
+
+.icon__cart {
+    position: relative;
+}
+.icon__cart span {
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    top: 50%;
+    right: -20px;
+}
+
+.header__title {
+    font-size: xx-large;
+}
+
+.list__products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.cart__tab {
+    width: 400px;
+    background-color: rgb(53, 52, 52);
+    color: rgb(201, 204, 206);
+    position: fixed;
+    top: 0;
+    right: -440px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+
+.card__tab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.card__tab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+}
+
+.card__tab button {
+ background-color: yellow;
+ border: none;
+ font-family: Poppins;
+ cursor: pointer;
+ font-weight: 500;
+}
+
+.card__tab .close {
+    background-color: white;
+}
